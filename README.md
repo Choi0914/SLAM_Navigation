@@ -1,5 +1,4 @@
 # 2D_LiDAR_SLAM_Navigation
----
 이 레포지토리는 MORAI simulator 환경에서 2d lidar를 사용해 SLAM을 하고 SLAM으로 얻은 map을 바탕으로 지정한 장소로 로봇을 이동시키는 프로젝트입니다.<br>
 
 ### 사용 운영체제
