@@ -26,30 +26,35 @@ $ roslaunch kw_tf tf_setting.launch
 ### 1. 3D Lidar -> 2D Lidar 전환
 3D Lidar의 heigtht 조절해 2D Lidar처럼 사용
 - 3D Lidar
-
-![lidar_3D](https://github.com/Choi0914/2D_LiDAR_SLAM-Navigation/assets/121415776/9494a8a1-4ed5-432f-856d-32e60e92e2dc)
+![lidar_3D](https://github.com/Choi0914/SLAM_Navigation/assets/121415776/c5679427-c3a8-4b47-820a-c8309d739370)
 
 - 3D Lidar -> 2D Lidar 전환
 ```
 $ roslaunch pointcloud_to_laserscan sample_node.launch
 ```
-![convert_to_lidar2D](https://github.com/Choi0914/2D_LiDAR_SLAM-Navigation/assets/121415776/e2ffec72-8c93-497c-9d78-267609a3df6b)
+![convert_to_lidar2D](https://github.com/Choi0914/SLAM_Navigation/assets/121415776/300b6db0-463b-49c2-8b9c-7ae61515a7f4)
 
 ### 2. SLAM
 - SLAM 시작
 ```
 $ roslaunch gmapping slam_gmapping.launch
 ```
-![gmappig_render](https://github.com/Choi0914/2D_LiDAR_SLAM-Navigation/assets/121415776/94fda1e6-d1de-4ebe-ae09-bea63cf01cb0)
+![gmappig_render](https://github.com/Choi0914/SLAM_Navigation/assets/121415776/3192cb91-7cf9-4a82-b148-ba6610a11622)
+
 - SLAM 종료
 ```
 $ rosrun map_server map_saver
 ```
 - 완성된 map
-![map2](https://github.com/Choi0914/2D_LiDAR_SLAM-Navigation/assets/121415776/3178eccb-14c9-460a-9c37-dc69fbb58d18)
+
+![map2](https://github.com/Choi0914/SLAM_Navigation/assets/121415776/e126e443-cfa8-4cdb-a810-4533f90c9ee7)
+
+
 
 ### 3. Navigation
+2D-navi-goal을 통해 목표 위치 지정하면 로봇 이동
 ```
 $ roslaunch kw_tf navigation.launch
 ```
-![navigation_render](https://github.com/Choi0914/2D_LiDAR_SLAM-Navigation/assets/121415776/772eb254-17d0-4b82-87dd-43e16565fb1b)
+![navigation_render](https://github.com/Choi0914/SLAM_Navigation/assets/121415776/8348bdd9-c86c-4bce-b84d-312c590fa00b)
+
